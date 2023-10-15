@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const db = require('./db/connection');
 
 inquirer
   .prompt([
@@ -18,7 +19,6 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log('You selected:', answers.action);
-    // Depending on the selected action, you can perform the corresponding logic here
-    // For example, you can call functions to handle each action based on the selected choice
+    
+   
   });
